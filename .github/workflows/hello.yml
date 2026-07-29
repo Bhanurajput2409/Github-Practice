@@ -1,0 +1,18 @@
+# Workflow ( No indetation for naming )
+name: hello
+
+# On tells when the workflow run
+on:
+  workflow_dispatch: 
+
+# Job tells what the workflow should do, theree can be one or more the one jobs, hence we write jobs
+#jobs is an object so needs identation
+
+jobs :
+  say-hello:
+    # creates an ephemeral conatiner with ubuntu running
+    runs-on: ubuntu-latest
+    # That ephemeral conatiner will have steps to execute, hence name those steps and use run: run has the command
+    steps:
+      - name: Say hello to new student
+        run: echo " Hello dosto"
