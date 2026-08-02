@@ -3,20 +3,21 @@
 name: Auto Linter
 on:
   push:
-    paths: "*.py"
+    paths: 
+      - "*.py"
 
 jobs:
   code-linting:
     runs-on: ubuntu-latest
     steps:
       - name: check/clone the code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       # Step 2: Install and configure the Python environment
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.14'
+          python-version: '3.12'
 
       - name: install linter
         run: pip install ruff
