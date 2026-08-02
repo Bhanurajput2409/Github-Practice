@@ -8,7 +8,6 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
-# Step 3
 @app.route('/health')
 def health():
     return 'Server is up and running'
