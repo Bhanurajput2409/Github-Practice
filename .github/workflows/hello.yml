@@ -15,4 +15,4 @@ jobs :
     # That ephemeral conatiner will have steps to execute, hence name those steps and use run: run has the command
     steps:
       - name: Say hello to new student
-        run: echo " Hello dosto"
+        run: echo " Hello bhanu" 
