@@ -23,5 +23,4 @@ jobs:
         uses: docker/build-push-action@v6
         with: 
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/myapp:latest
-
+          tags: your_actual_dockerhub_username/myapp:latest
